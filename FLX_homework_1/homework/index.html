@@ -28,7 +28,7 @@
                         <a href="#listSection"><b>List</b></a>
                         <a href="#textformatsSection"><b>Text formats</b></a>
                         <a href="#blockquotesSection"><b>Blockquotes</b></a>
-                        <hr >
+                        <hr>
                     </nav>
 
                 </header>
@@ -138,17 +138,15 @@
                         <dd>description 2</dd>
                     </dl>
 
-                    <p>Details
-                        <select title="details">
+                    <label>Details
+                        <select>
                             <option>HTML</option>
                             <option>CSS</option>
                             <option>JS</option>
                         </select>
-
-                    </p>
+                    </label>
                 </section>
                 <hr>
-
 
 
                 <section id="textformatsSection">
@@ -202,14 +200,17 @@ both           spaces and
                 <hr>
 
                 <form action="/" method="get">
-                    <label for="first-name">First name:</label>
-                    <input type="text" id="first-name">
+                    <label>First name:
+                        <input type="text">
+                    </label>
                     <br>
-                    <label for="surname">Surname:</label>
-                    <input type="text" id="surname">
+                    <label>Surname:
+                        <input type="text">
+                    </label>
                     <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <label>Email:
+                        <input type="email">
+                    </label>
                     <br>
                     <textarea title="text-area" cols="30" rows="10"></textarea>
                     <br>
