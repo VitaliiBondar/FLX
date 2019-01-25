@@ -1,6 +1,8 @@
 body {
   background: #fff;
-  margin: 0; }
+  margin: 0;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  line-height: 24px; }
   body header {
     height: 100vh;
     background: url(../img/header_background_v1.jpg) no-repeat top/cover; }
@@ -15,12 +17,11 @@ body {
         margin-top: 20px; }
         body header .top-wrapper nav a {
           padding: 20px 100px;
+          font-size: 15px;
+          font-weight: 600;
           color: #ECECEC;
           text-decoration: none;
-          font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
           text-transform: uppercase;
-          font-size: 15px;
-          font-weight: bold;
           border-left: 2px solid #607d8b; }
           body header .top-wrapper nav a:first-child {
             border-left: none; }
@@ -31,18 +32,18 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
       body header section h1 {
-        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-        text-transform: uppercase;
         font-size: 25px;
-        font-weight: bold;
+        font-weight: 600;
         color: #ECECEC;
+        text-transform: uppercase;
         margin-bottom: 29px;
         width: 700px; }
       body header section .btn {
-        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-        text-transform: uppercase;
-        color: #FFFAEA;
         background: #01ACAC;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFAEA;
+        text-transform: uppercase;
         text-decoration: none;
         cursor: pointer; }
       body header section .btn-top {
@@ -60,11 +61,10 @@ body {
         margin: 0 10px 0 auto;
         background: transparent; }
     body main section h1 {
-      font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-      text-transform: uppercase;
       font-size: 25px;
-      font-weight: bold;
+      font-weight: 600;
       color: #000;
+      text-transform: uppercase;
       text-align: right;
       margin: 17px 0 0; }
     body main .post-list {
@@ -81,22 +81,22 @@ body {
         body main .post-list article .post {
           margin: 5px 0 20px; }
           body main .post-list article .post .post-description {
-            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-            color: #e90303;
             font-size: 13px;
+            font-weight: 300;
+            color: #e90303;
             margin: 0 0 5px 5px; }
           body main .post-list article .post h3 {
+            font-size: 20px;
+            font-weight: 600;
             color: #0097A7;
             text-transform: uppercase;
-            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-            font-size: 20px;
-            font-weight: bold;
             border-top: 1px solid #607d8b;
             margin-top: 0;
             margin-bottom: 0;
             padding-top: 7px; }
           body main .post-list article .post p {
-            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 300;
             color: #000;
             margin: 0; }
         body main .post-list article button {
@@ -106,10 +106,11 @@ body {
           display: block;
           margin-left: auto; }
         body main .post-list article .btn {
-          font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: 300;
           color: #FFFAEA;
           background: #01ACAC;
+          text-transform: uppercase;
           text-decoration: none;
           cursor: pointer; }
     body main .about {
@@ -117,7 +118,8 @@ body {
       margin: auto;
       padding-bottom: 60px; }
       body main .about p {
-        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
         color: #000;
         margin: 0 0 20px; }
       body main .about img {
@@ -125,8 +127,9 @@ body {
     body main .contact-form h1 {
       margin: 0; }
     body main .contact-form h4 {
+      font-size: 15px;
+      font-weight: 700;
       color: #000;
-      font-weight: bold;
       text-transform: uppercase;
       text-align: right;
       margin: 0 0 23px; }
@@ -134,15 +137,14 @@ body {
       padding-bottom: 9px; }
       body main .contact-form form label {
         display: block;
-        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
         color: #0097A7;
         text-align: right; }
       body main .contact-form form .input-fields {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px; }
-        body main .contact-form form .input-fields label:after {
-          content: "dsds"; }
         body main .contact-form form .input-fields input {
           height: 44px;
           border: 1px solid #607d8b; }
@@ -162,16 +164,17 @@ body {
         display: block;
         margin-left: auto; }
       body main .contact-form form .btn {
-        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 300;
         color: #FFFAEA;
+        text-transform: uppercase;
         background: #01ACAC;
         text-decoration: none;
         cursor: pointer; }
   body footer {
     padding-bottom: 9px; }
     body footer span {
-      font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
-      color: #000;
       font-size: 12px;
+      font-weight: 300;
+      color: #000;
       margin-left: 16px; }

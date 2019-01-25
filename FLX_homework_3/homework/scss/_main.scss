@@ -1,14 +1,13 @@
-@mixin h1Font($color) {
-  font: $pageFont;
-  text-transform: uppercase;
-  font-size: $h1FontSize;
-  font-weight: bold;
+@mixin fontPage($color:$fontColor, $weight:$fontWeight, $size:$fontSize){
+  font-size: $size;
+  font-weight: $weight;
   color: $color;
 }
-
 body {
   background: $bodyBackground;
   margin: 0;
+  font-family: $fontFamily;
+  line-height: $fontLineHeight;
   header {
     height: 100vh;
     background: $headerImg;
@@ -25,12 +24,9 @@ body {
         margin-top: 20px;
         a {
           padding: 20px 100px;
-          color: $colorHeader;
+          @include fontPage($color:$colorHeader,$weight:600,$size:15px);
           text-decoration: none;
-          font: $pageFont;
           text-transform: uppercase;
-          font-size: 15px;
-          font-weight: bold;
           border-left: 2px solid $colorBorderNav;
           &:first-child {
             border-left: none;
@@ -47,15 +43,15 @@ body {
       transform: translate(-50%, -50%);
 
       h1 {
-        @include h1Font($colorHeader);
+        @include fontPage($color:$colorHeader,$weight:600,$size:25px);
+        text-transform: uppercase;
         margin-bottom: 29px;
         width: 700px;
       }
       .btn {
-        font: $pageFont;
+        background: $buttonBackground;
+        @include fontPage($color:#FFFAEA);
         text-transform: uppercase;
-        color: #FFFAEA;
-        background: $battonBG;
         text-decoration: none;
         cursor: pointer;
       }
@@ -81,7 +77,8 @@ body {
     }
     section {
       h1 {
-        @include h1Font($fontColor);
+        @include fontPage($weight:600,$size:25px);
+        text-transform: uppercase;
         text-align: right;
         margin: 17px 0 0;
       }
@@ -101,26 +98,20 @@ body {
         .post {
           margin: 5px 0 20px;
           .post-description {
-            font: $pageFont;
-            color: $descriptionColor;
-            font-size: 13px;
+            @include fontPage($color:$descriptionColor,$size:13px);
             margin: 0 0 5px 5px;
 
           }
           h3 {
-            color: $h3Color;
+            @include fontPage($color:$h3Color,$weight:600,$size:20px);
             text-transform: uppercase;
-            font: $pageFont;
-            font-size: $h3FontSize;
-            font-weight: bold;
             border-top: $mainBorder;
             margin-top: 0;
             margin-bottom: 0;
             padding-top: 7px;
           }
           p {
-            font: $pageFont;
-            color: $fontColor;
+            @include fontPage;
             margin: 0;
           }
         }
@@ -132,10 +123,9 @@ body {
           margin-left: auto;
         }
         .btn {
-          font: $pageFont;
+          @include fontPage($color:#FFFAEA);
+          background: $buttonBackground;
           text-transform: uppercase;
-          color: #FFFAEA;
-          background: $battonBG;
           text-decoration: none;
           cursor: pointer;
 
@@ -147,8 +137,7 @@ body {
       margin: auto;
       padding-bottom: 60px;
       p {
-        font: $pageFont;
-        color: $fontColor;
+        @include fontPage;
         margin: 0 0 20px;
       }
       img {
@@ -160,8 +149,7 @@ body {
         margin: 0;
       }
       h4 {
-        color:$fontColor;
-        font-weight: bold;
+        @include fontPage($weight:700);
         text-transform: uppercase;
         text-align: right;
         margin: 0 0 23px;
@@ -170,17 +158,13 @@ body {
         padding-bottom: 9px;
         label {
           display: block;
-          font: $pageFont;
-          color: $h3Color;
+          @include fontPage($color:$h3Color);
           text-align: right;
         }
         .input-fields {
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
-          label:after{
-            content:"dsds";
-          }
           input {
             height: 44px;
             border: $mainBorder;
@@ -206,10 +190,9 @@ body {
           margin-left: auto;
         }
         .btn {
-          font: $pageFont;
+          @include fontPage($color:#FFFAEA);
           text-transform: uppercase;
-          color: #FFFAEA;
-          background: $battonBG;
+          background: $buttonBackground;
           text-decoration: none;
           cursor: pointer;
 
@@ -220,9 +203,7 @@ body {
   footer {
     padding-bottom: 9px;
     span {
-      font: $pageFont;
-      color: #000;
-      font-size: 12px;
+      @include fontPage($size:12px);
       margin-left: 16px;
     }
   }
