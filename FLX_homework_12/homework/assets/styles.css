@@ -1,0 +1,47 @@
+#inputs {
+    width: 300px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.msg-empty {
+    font-size: 20px;
+}
+
+.desc {
+    font-size: 20px;
+    text-decoration: none;
+    color: #110809;
+    margin: 10px;
+}
+.button {
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: auto;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 5px auto;
+
+}
+.todo-list-item a{
+    width: 300px;
+}
+.todo-list-item img{
+    height: 45px;
+}
+
+.checkbox {
+    justify-self: flex-end;
+}
+
